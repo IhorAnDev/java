@@ -2,7 +2,7 @@ package Lesson12;
 
 public class Test10 {
 
-   static void abc() {
+    static void abc() {
         String str;
         int a = 5;
         if (a >= 10) {
@@ -10,14 +10,20 @@ public class Test10 {
         }
         if (a < 1) {
             str = "Poka";
-        }else {
-            str="tut str";
+        } else {
+            str = "tut str";
         }
         System.out.println(str);
     }
 
     public static void main(String[] args) {
 
+        int a = 10;
+        int b = 20;
+
+        int maximum = (a > b) ? a : b;
+
+        System.out.println(maximum);
 
     }
 }
