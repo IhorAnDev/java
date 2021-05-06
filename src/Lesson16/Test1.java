@@ -13,7 +13,7 @@ public class Test1 {
         int i1 = s1.indexOf("fga");
         System.out.println(i1);
 
-        int i2 = s1.indexOf('t');
+        int i2 = s1.indexOf('a',2);
         System.out.println(i2);
 
         int i3 = s1.indexOf("a", 4);
