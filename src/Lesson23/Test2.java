@@ -29,7 +29,11 @@ public class Test2 {
     }
 }
 
+<<<<<<< HEAD
  class Employe {
+=======
+class Employe {
+>>>>>>> refs/remotes/origin/main
     double salary = 100;
     String name = "Kolya";
     int age;
