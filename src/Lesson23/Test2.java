@@ -18,7 +18,7 @@ public class Test2 {
     }
 }
 
-class Employee {
+class Employe {
     double salary = 100;
     String name = "Kolya";
     int age;
@@ -47,7 +47,7 @@ class Xirurg extends Doctor {
     }
 }
 
-class Teacher extends Employee {
+class Teache extends Employee {
     int kolvouchenikov;
 
     void uchit() {
