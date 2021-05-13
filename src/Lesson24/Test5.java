@@ -1,5 +1,7 @@
 package Lesson24;
 
+import javax.imageio.stream.ImageInputStream;
+
 public class Test5 {
 }
 
@@ -7,21 +9,30 @@ interface I1 {
     default void abc() {
         System.out.println("eto metod abc");
     }
-    static void def(){
+
+    static void def() {
         System.out.println("static method I1");
     }
 }
+
 interface I2 {
-    static void def(){
+    static void def() {
         System.out.println("static method I2");
     }
 }
+abstract class O{
 
- class R implements I1,I2{
-     public static void main(String[] args) {
-         I1.def();
-         I2.def();
-     }
+}
+
+class R extends O implements I1 {
+    I1 method1() {
+        return new R();
+    }
+
+    public static void main(String[] args) {
+
+    }
+
 }
 /*
 class Z2 implements I1 {
