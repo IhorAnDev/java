@@ -4,6 +4,7 @@ public class Test2 {
     public static void main(String[] args) {
         Figura f1 = new Kvadrat();
         System.out.println(f1.kolichestvostoroni);
+        f1.ploshad();
     }
 }
 
