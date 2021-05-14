@@ -1,0 +1,71 @@
+/*
+package Lesson25;
+
+public class Test1 {
+    public static void main(String[] args) {
+//        Driver[] array1 = {new Driver(), new Driver()};
+//        Help_able[] array3 = {new Driver(), new Driver(), new Teacher(), new Doctor()};
+        Employee emp1 = new Teacher();
+        Employee emp2 = new Doctor();
+        Employee emp3 = new Driver();
+        Employee[] array2 = {emp1, emp2, emp3};
+        String s1 = null;
+
+       */
+/* for (Employee emp:array2
+             ) {
+           emp.work();
+        }*//*
+
+        System.out.println(s1 instanceof String);
+    }
+}
+
+abstract class Employee {
+    void sleep() {
+        System.out.println("Employee sleep");
+    }
+
+    abstract void work();
+}
+
+class Teacher extends Employee implements Help_able {
+    @Override
+    void work() {
+        System.out.println("Teacher works");
+    }
+
+    @Override
+    public void help() {
+        System.out.println("teacher spasaet jizn");
+    }
+}
+
+class Driver extends Employee implements Help_able {
+    @Override
+    void work() {
+        System.out.println("Driver works");
+    }
+
+    @Override
+    public void help() {
+        System.out.println("Driver spasaet jizni");
+    }
+}
+
+class Doctor extends Employee implements Help_able {
+    @Override
+    void work() {
+        System.out.println("Doctor works");
+    }
+
+    @Override
+    public void help() {
+        System.out.println("Doktor spasaet jizny");
+    }
+}
+
+interface Help_able {
+    void help();
+}
+*/

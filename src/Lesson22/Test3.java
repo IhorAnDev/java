@@ -1,6 +1,5 @@
 package Lesson22;
 
-import Homework.Lesson10.P4.P5.E;
 
 public class Test3 {
 }
