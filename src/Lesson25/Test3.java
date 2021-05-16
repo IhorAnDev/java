@@ -8,6 +8,13 @@ public class Test3 {
         Employee emp4 = new Employee();
         Employee[] array = {emp1, emp2, emp3, emp4};
 
+        System.out.println(((Uchitel)emp2).kolichestvoUchenikov);
+        ((Uchitel)emp2).uchit();
+
+        emp1.eat();
+        System.out.println(emp1.salary);
+        ((Doctor)emp1).eat();
+
         for (Employee e : array
         ) {
             if (e instanceof Driver) {
@@ -21,21 +28,26 @@ public class Test3 {
 class Employee {
     String name = "Kolya";
     double salary = 100;
-    int age;
+    int age = 33;
     int expiriens;
 
-    void eat() {
-        System.out.println("kushat");
+    static void eat() {
+        System.out.println("Rabotnik kushat");
     }
 
     void sleep() {
-        System.out.println("spat");
+        System.out.println("Rabotnik spat");
     }
 }
 
 class Doctor extends Employee implements Help_able {
 
     String specialictyk = "Hirurg";
+
+
+   static void eat() {
+        System.out.println("Doktor kushaet");
+    }
 
     @Override
     public void help() {
@@ -48,7 +60,7 @@ class Doctor extends Employee implements Help_able {
 }
 
 class Uchitel extends Employee {
-    int kolichestvoUchenikov;
+    int kolichestvoUchenikov = 10;
 
     void uchit() {
         System.out.println("uchit");
