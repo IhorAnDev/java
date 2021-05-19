@@ -15,10 +15,9 @@ public class Test15 {
         Test15 t = new Test15();
         try {
             t.marathon(20, 13);
-        }catch (PodvernutNoguException e){
+        } catch (PodvernutNoguException e) {
             System.out.println(e.getMessage());
-        }
-        finally {
+        } finally {
             System.out.println("V lubom sluchae vi poluchite gramotu");
         }
 
